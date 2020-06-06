@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #03192E;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+button {
+  color: #04223e;
+  border: 0;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+  padding: 5px;
+}
+
+a:hover, button:hover {
+  opacity: .7;
+}
+
+.navbar {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.navbar .nav-item:not(:last-child) {
+  float: left;
+  padding: 10px;
+}
+
+
+.navbar .nav-item:last-child {
+  float: right;
+  padding: 10px 15px;
+  margin: 10px;
+  background-color: #F47850;
+  border-radius: 10px;
+}
+
+.hero-section {
+  background-color: #04223E;
+  background-image: url(https://cdn.glitch.com/88fac359-1734-45f2-8ea8-a0e980366ca5%2FGroupe%201.png?v=1591351777065);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 16.8em 0 14.8em 0;
+  border-radius: 0 0 50px 50px;
+
+}
+
+.hero-title {
+  margin: 15px;
+}
+
+.hero-description {
+  margin: 20px;
+}
+
+.hero-btn {
+  background: linear-gradient(45deg, #F47850, #FFA93A);
+}
+
+.s-m-section {
+  background: linear-gradient(45deg, #F47850, #FFA93A);
+  padding: 20px;
+}
+
+
+.s-m-title {
+  margin: 20px;
+}
+
+.s-m-descritpion {
+  margin: 0 0 40px 0;
+}
+
+.s-m-btn {
+  border: 2px solid #03192e;
+  color: #03192e;
+  padding: 8px 20px;
+  background: 0;
+}
+
+.s-m-btn-2 {
+  background-color: #03192e;
+  color: #F47850;
+}
+
+.time-load-section {
+  background: linear-gradient(0deg, #E6F0FA 40%, #03192E 40%);
+  padding: 100px 0;
+}
+
+.card {
+  padding: 60px;
+  border-radius: 10px;
+  background: #FFF;
+  color: #414f7b;
+  margin: 15px;
+  box-shadow: -1px 1px 20px 2px #00000030;
+}
+
+.statics-section {
+  background-color: #E6F0FA;
+  color: #03192E;
+  padding: 70px;
+}
+
+.statics-description {
+  margin: 10px 0 50px 0;
+}
+
+.statics-rows {
+  flex: 33.33%;
+}
+
+.feutures-section {
+  padding: 85px 60px;
+  background-image: url("https://cdn.glitch.com/88fac359-1734-45f2-8ea8-a0e980366ca5%2Fd6544c48-b170-4f92-ba80-918236af9b7c.image.png?v=1591364978974");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.feutures-card {
+  padding: 15px;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+
+}
+
+@media (min-width: 576px) {
+  .card {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .statics-rows {
+    flex: 100%;
+    -ms-flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    -ms-flex: 0 0 45%;
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+  .statics-rows {
+    flex: 33.33%;
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    -ms-flex: 0 0 45%;
+     flex: 0 0 45%; 
+     max-width: 45%;
+  }
+  .statics-rows {
+    flex: 33.33%;
+    max-width: 33.33%;
+    flex: 0 0 33.33%;
+  }
+}
