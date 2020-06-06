@@ -3,7 +3,7 @@
 Modern website design UI / UX without any frameworks HTML, CSS, JS 
 Supports all language
 
-![](https://prnt.sc/suy8rb)
+![](Screenshot.png)
 
 # Meta
 Abdennour Mez – [abdennour.mez160@gmail.com](mailto:abdennour.mez160@gmail.com)
