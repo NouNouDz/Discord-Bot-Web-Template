@@ -61,7 +61,7 @@ a:hover, button:hover {
 
 .hero-section {
   background-color: #04223E;
-  background-image: url(https://cdn.glitch.com/88fac359-1734-45f2-8ea8-a0e980366ca5%2FGroupe%201.png?v=1591351777065);
+  background-image: url("/img/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 16.8em 0 14.8em 0;
@@ -137,7 +137,7 @@ a:hover, button:hover {
 
 .feutures-section {
   padding: 85px 60px;
-  background-image: url("https://cdn.glitch.com/88fac359-1734-45f2-8ea8-a0e980366ca5%2Fd6544c48-b170-4f92-ba80-918236af9b7c.image.png?v=1591364978974");
+  background-image: url("/img/wave.png");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
