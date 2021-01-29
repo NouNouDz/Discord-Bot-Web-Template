@@ -135,7 +135,7 @@ button:hover {
   flex: 33.33%;
 }
 
-.feutures-section {
+.features-section {
   padding: 85px 60px;
   background-image: url("/img/wave.png");
   background-repeat: no-repeat;
@@ -143,7 +143,7 @@ button:hover {
   background-position-y: bottom;
 }
 
-.feutures-card {
+.features-card {
   padding: 15px;
 }
 
