@@ -63,7 +63,7 @@ button:hover {
 
 .hero-section {
   background-color: #04223e;
-  background-image: url("/img/header-bg.png");
+  background-image: url("./img/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 16.8em 0 14.8em 0;
@@ -137,7 +137,6 @@ button:hover {
 
 .features-section {
   padding: 85px 60px;
-  background-image: url("/img/wave.png");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
