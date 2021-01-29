@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap");
 
 * {
   margin: 0;
@@ -6,8 +6,10 @@
   outline: 0;
 }
 
-*, ::after, ::before {
-    box-sizing: border-box;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
 html {
@@ -15,9 +17,9 @@ html {
 }
 
 body {
-  background: #03192E;
-  color: #FFF;
-  font-family: 'Roboto', sans-serif;
+  background: #03192e;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
   text-align: center;
 }
 
@@ -32,12 +34,13 @@ button {
 
 a {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   padding: 5px;
 }
 
-a:hover, button:hover {
-  opacity: .7;
+a:hover,
+button:hover {
+  opacity: 0.7;
 }
 
 .navbar {
@@ -50,23 +53,21 @@ a:hover, button:hover {
   padding: 10px;
 }
 
-
 .navbar .nav-item:last-child {
   float: right;
   padding: 10px 15px;
   margin: 10px;
-  background-color: #F47850;
+  background-color: #f47850;
   border-radius: 10px;
 }
 
 .hero-section {
-  background-color: #04223E;
+  background-color: #04223e;
   background-image: url("/img/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 16.8em 0 14.8em 0;
   border-radius: 0 0 50px 50px;
-
 }
 
 .hero-title {
@@ -78,14 +79,13 @@ a:hover, button:hover {
 }
 
 .hero-btn {
-  background: linear-gradient(45deg, #F47850, #FFA93A);
+  background: linear-gradient(45deg, #f47850, #ffa93a);
 }
 
 .s-m-section {
-  background: linear-gradient(45deg, #F47850, #FFA93A);
+  background: linear-gradient(45deg, #f47850, #ffa93a);
   padding: 20px;
 }
-
 
 .s-m-title {
   margin: 20px;
@@ -104,26 +104,26 @@ a:hover, button:hover {
 
 .s-m-btn-2 {
   background-color: #03192e;
-  color: #F47850;
+  color: #f47850;
 }
 
 .time-load-section {
-  background: linear-gradient(0deg, #E6F0FA 40%, #03192E 40%);
+  background: linear-gradient(0deg, #e6f0fa 40%, #03192e 40%);
   padding: 100px 0;
 }
 
 .card {
   padding: 60px;
   border-radius: 10px;
-  background: #FFF;
+  background: #fff;
   color: #414f7b;
   margin: 15px;
   box-shadow: -1px 1px 20px 2px #00000030;
 }
 
 .statics-section {
-  background-color: #E6F0FA;
-  color: #03192E;
+  background-color: #e6f0fa;
+  color: #03192e;
   padding: 70px;
 }
 
@@ -177,7 +177,6 @@ a:hover, button:hover {
   .container {
     width: 1170px;
   }
-
 }
 
 @media (min-width: 576px) {
@@ -209,8 +208,8 @@ a:hover, button:hover {
 @media (min-width: 992px) {
   .card {
     -ms-flex: 0 0 45%;
-     flex: 0 0 45%; 
-     max-width: 45%;
+    flex: 0 0 45%;
+    max-width: 45%;
   }
   .statics-rows {
     flex: 33.33%;
