@@ -1,2 +1,2 @@
 cd src
-browserify ./assets/js/replacement.js -o ./bundled-scripts/rpl.js
+browserify ./assets/js/replacement.js -o ./scripts/rpl.js
