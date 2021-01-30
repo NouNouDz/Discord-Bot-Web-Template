@@ -12,5 +12,3 @@ var cards = document.getElementsByClassName('card-description');
 for (var i = 0; i < cards.length; i++) {
     cards.item(i).innerHTML = lorem.generateSentences(3);
 }
-
-document.getElementById('card-tiger-description').innerHTML = lorem.generateSentences(3);
