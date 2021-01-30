@@ -80,8 +80,7 @@ button:hover {
   background-image: url("../img/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 16.8em 0 14.8em 0;
-  border-radius: 0 0 50px 50px;
+  padding: 25% 0 12% 0;
 }
 
 .hero-title {
@@ -94,6 +93,11 @@ button:hover {
 
 .hero-btn {
   background: linear-gradient(45deg, #f47850, #ffa93a);
+}
+
+.hero-title-section {
+  position: relative;
+  top: -150px;
 }
 
 .s-m-section {
