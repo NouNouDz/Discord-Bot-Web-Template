@@ -58,6 +58,10 @@ button:hover {
   opacity: 0.7;
 }
 
+.stats {
+  color: black;
+}
+
 .navbar {
   list-style-type: none;
   padding: 5px;
