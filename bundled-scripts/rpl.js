@@ -1,4 +1,50 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+// You just worry about this bit :)
+
+// Put your bot's name in the string below! (for ' use \')
+var botName = 'Your bot\'s name';
+
+
+// Aight this is the complicated bit... Don't worry about this!
+const loremIpsum = require('lorem-ipsum').LoremIpsum;
+
+const lorem = new loremIpsum({
+    wordsPerSentence: {
+        max: 8,
+        min: 4
+    }
+});
+
+var cards = document.getElementsByClassName('card-description');
+
+for (i = 0; i < cards.length; i++) {
+    cards.item(i).innerHTML = lorem.generateSentences(2);
+}
+
+var replaceBotName = '[Your Bot Name]';
+
+var replacements = document.getElementsByTagName('h3');
+
+function replace(list, replace, replacement) {
+    for (i = 0; i < list.length; i++) {
+        list.item(i).innerHTML = list.item(i).innerHTML.replace(replace, replacement)
+    }
+}
+
+replace(replacements, replaceBotName, botName);
+
+replacements = document.getElementsByTagName('p');
+
+replace(replacements, replaceBotName, botName);
+
+replacements = document.getElementsByTagName('h1');
+
+replace(replacements, replaceBotName, botName);
+
+replacements = document.getElementsByClassName('doc-title');
+
+replace(replacements, replaceBotName, botName);
+},{"lorem-ipsum":6}],2:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -12,7 +58,7 @@ exports.FORMAT_PLAIN = FORMAT_PLAIN;
 var FORMATS = [FORMAT_HTML, FORMAT_PLAIN];
 exports.FORMATS = FORMATS;
 
-},{}],2:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25,7 +71,7 @@ var LINE_ENDINGS = {
 };
 exports.LINE_ENDINGS = LINE_ENDINGS;
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -39,7 +85,7 @@ var SUPPORTED_PLATFORMS = {
 };
 exports.SUPPORTED_PLATFORMS = SUPPORTED_PLATFORMS;
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -49,7 +95,7 @@ exports.WORDS = void 0;
 var WORDS = ["ad", "adipisicing", "aliqua", "aliquip", "amet", "anim", "aute", "cillum", "commodo", "consectetur", "consequat", "culpa", "cupidatat", "deserunt", "do", "dolor", "dolore", "duis", "ea", "eiusmod", "elit", "enim", "esse", "est", "et", "eu", "ex", "excepteur", "exercitation", "fugiat", "id", "in", "incididunt", "ipsum", "irure", "labore", "laboris", "laborum", "Lorem", "magna", "minim", "mollit", "nisi", "non", "nostrud", "nulla", "occaecat", "officia", "pariatur", "proident", "qui", "quis", "reprehenderit", "sint", "sit", "sunt", "tempor", "ullamco", "ut", "velit", "veniam", "voluptate"];
 exports.WORDS = WORDS;
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -125,7 +171,7 @@ var loremIpsum = function loremIpsum() {
 
 exports.loremIpsum = loremIpsum;
 
-},{"./constants/words":4,"./lib/LoremIpsum":6}],6:[function(require,module,exports){
+},{"./constants/words":5,"./lib/LoremIpsum":7}],7:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -231,7 +277,7 @@ function () {
 var _default = LoremIpsum;
 exports.default = _default;
 
-},{"../constants/formats":1,"../constants/lineEndings":2,"../lib/generator":7,"../util":9}],7:[function(require,module,exports){
+},{"../constants/formats":2,"../constants/lineEndings":3,"../lib/generator":8,"../util":10}],8:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -347,7 +393,7 @@ function () {
 var _default = Generator;
 exports.default = _default;
 
-},{"../constants/words":4,"../util":9}],8:[function(require,module,exports){
+},{"../constants/words":5,"../util":10}],9:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -367,7 +413,7 @@ var capitalize = function capitalize(str) {
 var _default = capitalize;
 exports.default = _default;
 
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -424,7 +470,7 @@ var _makeArrayOfStrings = _interopRequireDefault(require("./makeArrayOfStrings")
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-},{"./capitalize":8,"./isNode":10,"./isReactNative":11,"./isWindows":12,"./makeArrayOfLength":13,"./makeArrayOfStrings":14}],10:[function(require,module,exports){
+},{"./capitalize":9,"./isNode":11,"./isReactNative":12,"./isWindows":13,"./makeArrayOfLength":14,"./makeArrayOfStrings":15}],11:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -442,7 +488,7 @@ var isNode = function isNode() {
 var _default = isNode;
 exports.default = _default;
 
-},{}],11:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -460,7 +506,7 @@ var isReactNative = function isReactNative() {
 var _default = isReactNative;
 exports.default = _default;
 
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 (function (process){(function (){
 "use strict";
 
@@ -482,7 +528,7 @@ var _default = isWindows;
 exports.default = _default;
 
 }).call(this)}).call(this,require('_process'))
-},{"../constants/platforms":3,"_process":16}],13:[function(require,module,exports){
+},{"../constants/platforms":4,"_process":16}],14:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -504,7 +550,7 @@ var makeArrayOfLength = function makeArrayOfLength() {
 var _default = makeArrayOfLength;
 exports.default = _default;
 
-},{}],14:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -528,53 +574,7 @@ var makeArrayOfStrings = function makeArrayOfStrings(length, makeString) {
 var _default = makeArrayOfStrings;
 exports.default = _default;
 
-},{".":9}],15:[function(require,module,exports){
-// You just worry about this bit :)
-
-// Put your bot's name in the string below! (for ' use \')
-var botName = 'Your bot\'s name';
-
-
-// Aight this is the complicated bit... Don't worry about this!
-const loremIpsum = require('lorem-ipsum').LoremIpsum;
-
-const lorem = new loremIpsum({
-    wordsPerSentence: {
-        max: 8,
-        min: 4
-    }
-});
-
-var cards = document.getElementsByClassName('card-description');
-
-for (i = 0; i < cards.length; i++) {
-    cards.item(i).innerHTML = lorem.generateSentences(2);
-}
-
-var replaceBotName = '[Your Bot Name]';
-
-var replacements = document.getElementsByTagName('h3');
-
-function replace(list, replace, replacement) {
-    for (i = 0; i < list.length; i++) {
-        list.item(i).innerHTML = list.item(i).innerHTML.replace(replace, replacement)
-    }
-}
-
-replace(replacements, replaceBotName, botName);
-
-replacements = document.getElementsByTagName('p');
-
-replace(replacements, replaceBotName, botName);
-
-replacements = document.getElementsByTagName('h1');
-
-replace(replacements, replaceBotName, botName);
-
-replacements = document.getElementsByClassName('doc-title');
-
-replace(replacements, replaceBotName, botName);
-},{"lorem-ipsum":5}],16:[function(require,module,exports){
+},{".":10}],16:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -760,4 +760,4 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}]},{},[15]);
+},{}]},{},[1]);

@@ -58,7 +58,7 @@ button:hover {
 
 .hero-section {
   background-color: #04223e;
-  background-image: url("./img/header-bg.png");
+  background-image: url("../img/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 16.8em 0 14.8em 0;
