@@ -531,10 +531,11 @@ exports.default = _default;
 },{".":9}],15:[function(require,module,exports){
 // You just worry about this bit :)
 
-var botName = "[Your Bot's Name]";
+// Put your bot's name in the string below! (for ' use \')
+var botName = 'Your bot\'s name';
 
 
-// Aight this is the complicated bit... Don't worry about this bit!
+// Aight this is the complicated bit... Don't worry about this!
 const loremIpsum = require('lorem-ipsum').LoremIpsum;
 
 const lorem = new loremIpsum({
@@ -544,17 +545,15 @@ const lorem = new loremIpsum({
     }
 });
 
-document.getele
-
 var cards = document.getElementsByClassName('card-description');
 
 for (i = 0; i < cards.length; i++) {
     cards.item(i).innerHTML = lorem.generateSentences(3);
 }
 
-var replaceBotName = "[Your Bot Name]";
+var replaceBotName = '[Your Bot Name]';
 
-var replacements = document.getElementsByTagName("h3");
+var replacements = document.getElementsByTagName('h3');
 
 function replace(list, replace, replacement) {
     for (i = 0; i < list.length; i++) {
@@ -569,6 +568,10 @@ replacements = document.getElementsByTagName('p');
 replace(replacements, replaceBotName, botName);
 
 replacements = document.getElementsByTagName('h1');
+
+replace(replacements, replaceBotName, botName);
+
+replacements = document.getElementsByClassName('doc-title');
 
 replace(replacements, replaceBotName, botName);
 },{"lorem-ipsum":5}],16:[function(require,module,exports){

@@ -39,3 +39,7 @@ replace(replacements, replaceBotName, botName);
 replacements = document.getElementsByTagName('h1');
 
 replace(replacements, replaceBotName, botName);
+
+replacements = document.getElementsByClassName('doc-title');
+
+replace(replacements, replaceBotName, botName);
