@@ -1,10 +1,8 @@
-const {
-    client_id,
-    permissions_id
-} = require('../../config.json');
+var client_id = "YOUR_CLIENT_ID";
+var permissions_id = "PERMISSIONS_ID"; // More info on permissions here: 
 
 var url = `https://discord.com/api/oauth2/authorize?client_id=${client_id}&permissions=${permissions_id}&scope=bot`;
 
-function openInviteLink() {
+document.getElementById('add-to-server-button').onclick = function () {
     window.open(url, '_blank');
 };
