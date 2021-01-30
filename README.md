@@ -11,7 +11,7 @@ You can setup the website in two easy steps, **Note: This is a basic setup and i
 1. Run BundleCode.sh
 2. In assets/js/replacement.js change botName to whatever the name of your bot is. Then commit your changes and boom! All done!
 
-**IMPORTANT NOTE: ANY TIME YOU CHANGE ANYTHING IN REPLACEMENT.JS, REMEMBER TO RUN BundleCode.sh OTHERWISE IT WILL NOT WORK!
+**IMPORTANT NOTE: ANY TIME YOU CHANGE ANYTHING IN REPLACEMENT.JS, REMEMBER TO RUN BundleCode.sh OTHERWISE IT WILL NOT WORK!**
 
 ## Contacts
 jamesinaxx - Discord: jamesina#1111
