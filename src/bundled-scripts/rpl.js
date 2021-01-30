@@ -532,12 +532,8 @@ exports.default = _default;
 const loremIpsum = require('lorem-ipsum').LoremIpsum;
 
 const lorem = new loremIpsum({
-    sentencesPerParagraph: {
-        max: 8,
-        min: 4
-    },
     wordsPerSentence: {
-        max: 16,
+        max: 8,
         min: 4
     }
 });
