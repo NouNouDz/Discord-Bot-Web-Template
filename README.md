@@ -2,7 +2,7 @@
 
 A modern, stripped discord bot dashboard, designed with minimal coding requirements in mind!
 
-![](Screenshot.png)
+![](./assets/img/Screenshot.png)
 
 # Setup
 
