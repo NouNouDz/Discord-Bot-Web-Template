@@ -1,12 +1,10 @@
-## Discord bot web
+## DisDash
 
-Modern website design UI / UX without any frameworks HTML, CSS, JS 
-Supports all language
+A modern, stripped discord bot dashboard, designed with minimal coding requirements in mind!
 
 ![](Screenshot.png)
 
-# Meta
-Abdennour Mez – [abdennour.mez160@gmail.com](mailto:abdennour.mez160@gmail.com)
+# Contacts
+jamesinaxx - Discord: jamesina#1111
 
-See ``LICENSE`` for more information.
-[NouNouDz](https://github.com/NouNouDz) 
+See ``LICENSE`` for more info on the legal stuff
