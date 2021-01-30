@@ -7,6 +7,8 @@ const lorem = new loremIpsum({
     }
 });
 
+document.getele
+
 var cards = document.getElementsByClassName('card-description');
 
 for (var i = 0; i < cards.length; i++) {
