@@ -17,7 +17,7 @@ const lorem = new loremIpsum({
 var cards = document.getElementsByClassName('card-description');
 
 for (i = 0; i < cards.length; i++) {
-    cards.item(i).innerHTML = lorem.generateSentences(3);
+    cards.item(i).innerHTML = lorem.generateSentences(2);
 }
 
 var replaceBotName = '[Your Bot Name]';
