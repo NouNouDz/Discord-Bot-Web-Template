@@ -1,5 +1,4 @@
 // You just worry about this bit :)
-
 // Put your bot's name in the string below! (for ' use \')
 var botName = 'Your bot\'s name';
 
@@ -13,6 +12,13 @@ const lorem = new loremIpsum({
         min: 4
     }
 });
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+
+if (urlParams.has('name')) {
+    botName = urlParams.get('name');
+}
 
 var cards = document.getElementsByClassName('card-description');
 
