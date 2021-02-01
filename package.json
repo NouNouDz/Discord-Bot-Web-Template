@@ -2,7 +2,7 @@
   "name": "disdash",
   "version": "1.0.0",
   "description": "A modern, stripped discord bot dashboard, designed with minimal coding requirements in mind!",
-  "main": "app.js",
+  "main": "bin/www",
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
