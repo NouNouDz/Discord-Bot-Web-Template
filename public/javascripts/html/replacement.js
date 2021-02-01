@@ -1,6 +1,6 @@
 // You just worry about this bit :)
 // Put your bot's name in the string below! (for ' use \')
-var botName = 'Your bot\'s name';
+var botName = 'A cool bot name';
 
 
 // Aight this is the complicated bit... Don't worry about this!
@@ -28,24 +28,8 @@ for (i = 0; i < cards.length; i++) {
 
 var replaceBotName = '[Your Bot Name]';
 
-var replacements = document.getElementsByTagName('h3');
+var replacements = document.getElementsByTagName('*');
 
-function replace(list, replace, replacement) {
-    for (i = 0; i < list.length; i++) {
-        list.item(i).innerHTML = list.item(i).innerHTML.replace(replace, replacement)
-    }
+for (i = 0; i < list.length; i++) {
+    replacements.item(i).innerHTML = replacements.item(i).innerHTML.replace(replaceBotName, botName)
 }
-
-replace(replacements, replaceBotName, botName);
-
-replacements = document.getElementsByTagName('p');
-
-replace(replacements, replaceBotName, botName);
-
-replacements = document.getElementsByTagName('h1');
-
-replace(replacements, replaceBotName, botName);
-
-replacements = document.getElementsByClassName('doc-title');
-
-replace(replacements, replaceBotName, botName);
