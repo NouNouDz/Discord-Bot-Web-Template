@@ -137,7 +137,7 @@ a:hover, button:hover {
 
 .feutures-section {
   padding: 85px 60px;
-  background-image: url("/img/wave.png");
+  background-image: url("./img/wave.png");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
